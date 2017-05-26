@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Encabezado de la página -->
+	<head>		
+		<meta charset = "utf-8">
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		
+		<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  		<!-- Compiled and minified JavaScript -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  		<!--Import Google Icon Font-->
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      	<!-- Ionicons -->
+      	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+      	<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/miScript.js"></script>
+		
+		<!-- Título de la página -->
+		<title>I'M BATMAN</title>
+	</head>
+	<!-- Fin encabezado de la página -->
+
+	<!-- Cuerpo de la página -->
+	<body>
+
+		<!-- Dropdown videojuegos -->
+		<ul id="dropdownVideojuegos" class="dropdown-content">
+			<!-- Enlace con modal -->
+			<li><a class="waves-effect waves-light modal-trigger" href="#modalOrigins" id="playOrigins">Arkham Origins</a></li>
+			<!-- Línea para dividir los enlaces -->
+			<li class="divider"></li>
+			<li><a class="waves-effect waves-light modal-trigger" href="#modalAsylum" id="playAsylum">Arkham Asylum</a></li>
+			<li class="divider"></li>
+			<li><a class="waves-effect waves-light modal-trigger" href="#modalCity" id="playCity">Arkham City</a></li>
+			<li class="divider"></li>
+			<li><a class="waves-effect waves-light modal-trigger" href="#modalKnight" id="playKnight">Arkham Knight</a></li>
+		</ul>
+		<!-- Fin dropdown videojuegos -->
+
+		<!-- Modal trailers videojuegos -->
+		<div id="modalOrigins" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<!-- Icono cerrar -->
+					<a href="#!" class="modal-action" id="stopOrigins"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<!-- Video trailer -->
+					<div class="video-container trailers">
+        				<iframe id="trailerOrigins" src="https://www.youtube.com/embed/9pnK8akbd2M?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalAsylum" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopAsylum"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerAsylum" src="https://www.youtube.com/embed/dFk7y4JtKd0?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalCity" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action"id="stopCity"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerCity" src="https://www.youtube.com/embed/xK0wSRthFsg?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalKnight" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopKnight"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerKnight" src="https://www.youtube.com/embed/Pk9xSsowVDQ?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<!-- Fin modal trailers videojuegos -->
+
+		<!-- Modal trailers películas -->
+		<div id="modalFantasma" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopFantasma"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerFantasma" src="https://www.youtube.com/embed/530zqkDKjno?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalTDKR1" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopTDKR1"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerTDKR1" src="https://www.youtube.com/embed/s7oOZsDfBa0?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalTDKR2" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopTDKR2"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerTDKR2" src="https://www.youtube.com/embed/ha4ggHpfOME?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalYearOne" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopYearOne"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerYearOne" src="https://www.youtube.com/embed/Jjq4ACnCn0o?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalBeyond" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopBeyond"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerBeyond" src="https://www.youtube.com/embed/jTSlHYxAnEs?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<div id="modalRedHood" class="modal black">
+			<div class="modal-content">				
+				<div class="modal-header" align="right">
+					<a href="#!" class="modal-action" id="stopRedHood"><i class="tiny ionicon modal-close ion-android-close iconos"></i></a>
+				</div>
+				<div class="modal-body">
+					<div class="video-container trailers">
+        				<iframe id="trailerRedHood" src="https://www.youtube.com/embed/9ketSq8j0Qw?rel=0&amp;showinfo=0&amp;wmode=transparent&amp;" frameborder="0"></iframe>
+      				</div>
+				</div>
+		    </div>
+		</div>
+		<!-- Fin modal trailers películas -->
+
+		<!-- Encabezado de página -->
+		<div class="navbar-fixed">
+			<nav class="black">
+				<div class="container">
+					<div class="nav-wrapper">
+						<!-- Logo -->
+						<a href="miPaginaWeb.html" class="brand-logo">
+							<img class="responsive-img" src="img/logoBatman.jpg" id="logo" />
+						</a>
+						<!-- Enlaces -->
+						<ul class="right hide-on-med-and-down">
+							<li>
+								<!-- Botón dropdown -->
+								<a class="dropdown-button" href="#!" data-activates="dropdownVideojuegos">Videojuegos
+									<i class="material-icons left">arrow_drop_down</i>
+								</a>
+							</li>
+							<li>
+								<!-- Enlace a otra página web -->
+								<a href="https://www.batmanarkhamknight.com/es/batmobile" target="_blank">
+									<i class="tiny ion-android-car iconos left"></i>Batimóvil
+								</a>
+							</li>
+							<li>
+								<!-- Enlace misma página web -->
+								<a href="#baticueva">
+									<i class="tiny ion-android-pin iconos left"></i>Baticueva
+								</a>
+							</li>	
+							<li>
+								<!-- Botón controlar audio -->
+								<button class="btn-floating tooltipped waves-effect waves-light grey darken-1" id="on_off" value="pause" data-position="right" data-delay="50" data-tooltip="HAHAHAHA">♫</button>
+								<audio id="risaJoker" loop>
+								    <source src="audio/JokerLaugh.mp3" type="audio/mp3" >
+								</audio>
+							</li>				
+					    </ul>	
+					    <!-- Fin enlaces -->			    
+					</div>
+				</div>
+			</nav>	
+		</div>					
+		<!-- Fin encabezado de página -->
+
+		<!-- Inicio contenedor central -->
+		<div class="container">
+
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<!-- Video edificios -->
+					<div class="center-align">		
+						<video class="responsive-video" autoplay loop muted preload width="100%">
+			      			<source src="video/edificios.mp4" type="video/mp4"/>
+			    		</video>
+					</div>
+					<!-- Mensaje de video, se oculta en móviles -->
+					<div id="mensaje-container" class="hide-on-med-and-down">
+						<div id="mensaje-video">
+							<h3 class="center-align">Bienvenido a Ciudad Gótica</h3>								
+						</div>				
+					</div>			
+				</div>
+			</div>
+			<!-- Fin video edificios -->
+
+			<!-- Parallax batman -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<div class="parallax-container">
+		      			<div class="parallax"><img class="responsive-img" src="img/batmanParallax.jpg"></div>
+		    		</div>
+    			</div>
+    		</div>
+    		<!-- Fin parallax batman -->
+
+			<!-- Título serie tv -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable">GOTHAM (SERIE DE TV)</h4>
+				</div>
+			</div>
+
+			<!-- Apartado serie tv -->
+			<div class="row row-no-botton">	
+				<!-- Video serie tv -->		
+				<div class="col s12 m6 l6">
+					<p id="sinopsis-batman">Gotham es la historia del origen de los grandes súper villanos y vigilantes de DC Comics, revelando en cada nuevo capítulo lo que nunca se ha dicho.<br/><br/>Sigue el ascenso de James Gordon por una ciudad peligrosamente corrupta, que se tambalea al borde de la maldad y narra el nacimiento del superhéroe protector de Gotham: Batman.</p>
+				</div>		
+				<div class="col s12 m6 l6">
+					<video class="responsive-video" poster="img/jerome.jpg" controls preload>
+						<source src="video/GothamJerome.mp4" type="video/mp4">
+					</video>					
+				</div>		
+			</div>
+			<!-- Fin apartado serie tv -->
+
+			<!-- Título Robin -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable">ROBINS</h4>
+				</div>
+			</div>
+
+			<!-- Slider Robin -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<div class="slider">
+		    			<ul class="slides">
+		    				<li><img src="img/robins.jpg"></li>
+		    				<li>
+		    					<img class="responsive-img" src="img/robin1.jpg">
+		    					<div class="caption left-align" id="caption-Izq">
+		          					<h5>Dick Grayson (Robin I)</h5>
+		        				</div>
+		    				</li>
+		    				<li>
+		    					<img class="responsive-img" src="img/robin2.jpg">
+		    					<div class="caption center-align" id="caption-Centro">
+		          					<h5>Jason Todd (Robin II)</h5>
+		        				</div>
+		    				</li>
+		    				<li>
+		    					<img class="responsive-img" src="img/robin3.png">
+		    					<div class="caption left-align" id="caption-Izq">
+		          					<h5>Tim Drake (Robin III)</h5>
+		        				</div>
+		    				</li>
+		    				<li>
+		    					<img class="responsive-img" src="img/robin4.jpg">
+		    					<div class="caption left-align" id="caption-Izq">
+		          					<h5>Stephanie Brown (Robin IV)</h5>
+		        				</div>
+		    				</li>
+		    				<li>
+		    					<img class="responsive-img" src="img/robin5.jpg">
+		    					<div class="caption left-align" id="caption-IzqSuperior">
+		          					<h5>Damian Wayne (Robin V)</h5>
+		        				</div>
+		    				</li>
+		    			</ul>
+		    		</div>
+    			</div>
+    		</div>
+			<!-- Fin slider Robin -->
+
+			<!-- Título trajes de batman -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable">TRAJES DE BATMAN</h4>
+				</div>
+			</div>
+
+			<!-- Rejilla con trajes de batman -->	
+			<div class="row row-no-botton">
+				<div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman del Futuro" width="220px" src="img/BatmanBeyond.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman El Regreso del Caballero Oscuro" width="220px" src="img/BatmanTDKR.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman Tierra Uno" width="220px" src="img/BatmanEarthOne.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman 1970" width="220px" src="img/Batman1970.jpg">
+			    </div>
+			</div>
+			<div class="row row-no-botton">
+				<div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman La Serie Animada" width="220px" src="img/BatmanTheAnimatedSeries.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman Año Uno" width="220px" src="img/BatmanYearOne.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman Inc." width="220px" src="img/BatmanIncorporated.jpg">
+			    </div>
+			    <div class="col s6 offset-s3 m3 l3">
+			    	<img class="materialboxed responsive-img hoverable" data-caption="Batman Sinestro Corps" width="220px" src="img/BatmanSinestroCorps.jpg">
+			    </div>
+			</div>			
+			<!-- Fin rejilla con trajes de batman -->
+
+			<!-- Título villanos -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable">VILLANOS</h4>	
+				</div>
+			</div>
+
+			<!-- Collapsible villanos -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<ul class="collapsible popout" data-collapsible="accordion">
+						<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>ACERTIJO (Edward Nigma)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/acertijo.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Una mente maestra criminal con una extraña compulsión por retar a sus víctimas o enemigos dándoles pistas sobre sus crímenes en forma de acertijos, enigmas o adivinanzas. Batman se ha vuelto un digno adversario de sus trampas.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>    			
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>BANE</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/bane.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>A raíz de un experimento con la droga Venom, el enmascarado Bane adquirió una fuerza sobrehumana. Su poder e inteligencia hacen de él uno de los adversarios más temibles de Batman, y ha sido uno de los pocos villanos que ha logrado lesionar al Caballero Oscuro rompiéndole la columna.</p>
+		      						</div>
+		      					</div> 
+		      				</div>
+		    			</li>    			  			
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>CARA DE BARRO (Basil Karlo)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/caraBarro.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Fue un actor que se vuelve loco cuando se entero de una nueva versión de un clásico film de terror que él había protagonizado en la que no lo habían incluido. Para vengarse, se puso la máscara del villano de la película, Cara de Barro, y se embarco una serie de asesinatos entre los actores y el equipo de la nueva versión, matando a los actores en el orden y la forma en que morirían en la película. Más tarde obtuvo poderes cambiantes de forma y se convirtió en el último Cara de Barro.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>DEADSHOT (Floyd Lawton)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/deadshot.jpeg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Es un asesino suicida. Es considerado como el segundo mejor asesino del Universo DC, siendo el primero Deathstroke. Posee una puntería extraordinaria, siendo capaz de dispararle a una mosca a kilometros de distancia o a un auto en movimiento. El único que le ha hecho fallar un disparo, es Batman, lo cual lo coloca en el primer lugar de su lista negra.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>DEATHSTROKE (Slade Wilson)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/deathstroke.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Fue engañado por el ejército para formar parte de un experimento para crear supersoldados. El experimento fue un éxito para crearle grandes habilidades, pero causó grandes estragos en su personalidad. Sus superiores decidieron darlo de baja por insubordinación y fue en ese momento cuando Slade decidió convertirse en un mercenario, con la posibilidad de poder establecer sus propias reglas.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>    			
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>DOS CARAS (Harvey Dent)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/dosCaras.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Fue procurador de distrito hasta que su desorden de personalidad múltiple latente tomó la totalidad del control cuando la mitad de su cara fue horriblemente deformada, y comenzó a cometer crímenes relacionados con la dualidad y los lados opuestos siendo todas las decisiones importantes determinadas por una moneda de dos caras.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>EL SOMBRERERO LOCO</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/sombrerero.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un científico llamado Jervis Tetch que se especializa en neurociencia y que desarrolló hardware para controlar el cerebro e inducir estados hipnóticos.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>ESPANTAPÁJAROS (Jonathan Crane)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/espantapajaros.png">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un científico renegado que se especializa en la naturaleza del miedo. Emplea artefactos y técnicas especiales de su propio diseño para realizar sus delitos.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>GATÚBELA (Selina Kyle)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/catwoman.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Es una ladrona talentosa de joyas con un gusto por el lujo. Ella es extremadamente ágil y acrobática. Aunque es considerada tradicionalmente como una villana, ella ha sido presentada más como una "anti-héroe" en publicaciones posteriores.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>HARLEY QUINN</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/harley.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>La Dra. Harleen Quinzel fue la psiquiatra de El Joker en el Asilo Arkham hasta que ella terminó enamorada de él y, luego, se reinventó como su psicótica novia, Harley Quinn. Es sádica, violenta e impredecible. Es una habilidosa gimnasta y una experta en las artes marciales, siendo una dura oponente en el combate cuerpo a cuerpo.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>HIEDRA VENENOSA</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/hiedra.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Pamela Lilian Isley, era una bótanica que se conviertió en una híbrida mitad planta y humana por un experimento fallido. Puede controlar telequinéticamente a toda clase de plantas y se refiere a ellas como sus "bebés", siendo capaz de matar con tal de defenderlas. De gran belleza física, utiliza feromonas para seducir a hombres y mujeres y según algunas versiones, sus labios son altamente venenosos.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>HOMBRE CALENDARIO</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/calendario.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Es conocido por cometer crímenes que corresponden en días festivos y fechas importantes. Muchas veces viste trajes que se correlacionan con la fecha del crimen designado.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>  
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>HUGO STRANGE</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/hugo.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>El profesor Hugo Strange es un psicólogo demente que utiliza su maestría en la química para crear un suero que convierte a sus víctimas en bestias sin sentido que obedecen todas sus órdenes. Es uno de los pocos que conocen la verdadera identidad de Batman.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>HUSH</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/hush.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Thomas Elliot era amigo de la infancia de Bruce Wayne. Cuando falló en el intento de matar a sus propios padres, gracias a las habilidades quirúrgicas de Thomas Wayne, padre de Bruce, Elliot culpó a este último y se propuso arruinarle la vida. Su odio se dirige tanto a Batman como a Bruce Wayne, sin que sepa que se trata de la misma persona.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>JOKER (Guasón)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/joker.png">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>La apariencia de El Joker y una gran sonrisa ocultan una mente tortuosa que crea la mayor cantidad de problemas para su archi-enemigo, Batman. Su arsenal de armas incluyen cartas-navajas, flores de ácido, y el gas de la risa. Él es el mayor enemigo de Batman, así como el más famoso y recurrente.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>    					
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>KILLER CROC</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/croc.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Waylon Jones, era un huérfano criado por una tía alcohólica. Desde pequeño sufrió una rara mutación que afectó su cuerpo, asemejándolo a un caimán. Conforme fue perdiendo su humanidad, se convirtió en un temible criminal, poseedor de una monstruosa fuerza, sentidos agudos y la habilidad de respirar bajo el agua.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>LA CORTE DE LOS BÚHOS</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/buhos.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Una sociedad secreta que ha operado por más de cien años controlando en la clandestinidad los destinos de Gotham City, en los cuales Batman es una constante amenaza para sus planes delictivos.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>LADY SHIVA</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/shiva.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Una asesina mercenaria que una vez entrenó a Batman. Posiblemente es la mejor artista marcial viva en el universo de DC Comics.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>LUCIÉRNAGA (Garfield Lynns)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/luciernaga.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Es un huérfano que se convirtió en un pirómano, desarrollando un traje resistente al fuego con un lanzallamas para proseguir su pasatiempo. Él era conocido originalmente como un astuto criminal que inventaba numerosas armas relacionadas con la luz para cometer sus crímenes.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>   
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>MAN-BAT</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/manbat.png">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un científico, Kirk Langstrom, se convierte periódicamente en un murciélago antropomórfico, y le provoca problemas a Batman a pesar de ser también un aliado ocasional.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>MÁSCARA NEGRA</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/mascaraNegra.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Llamado Roman Sionis, es un señor del crimen en Gotham y uno de los enemigos de Batman. Lidera sus organizaciones criminales de forma despiadada y tan efectiva como si de un negocio se tratara, habiendo tomado la mayor parte de los bajos fondos de Gotham.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>PINGÜINO (Oswald Cobblepot)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/pinguino.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un hombre bajo y obeso de nariz puntiaguda que dice ser un caballero del crimen. Suele usar un esmoquin, sombrero de copa y un monóculo, además lleva consigo una variedad de paraguas trucados que esconden armas de fuego.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>PROFESOR PYG</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/pyg.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un científico obsesionado con transformar a sus víctimas en extrañas "muñecas" lobotomizadas.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>RA'S AL GHUL</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/ras.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un eco-terrorista de siglos de edad que conoce la identidad secreta de Batman; Ra's Al Ghul desea que Batman se case con su hija Talia Al Ghul, y se convierta en su sucesor.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>RED HOOD</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/redHood.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Anterior personalidad del Joker (como líder de una banda delictual), y actualmente del segundo Robin, Jason Todd. Ahora Red Hood es un anti-héroe que lucha contra el crímen, pero asesinando a los criminales.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>SOLOMON GRUNDY</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/grundy.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Un zombie de grandes dimensiones y fuerza sobrehumana capaz de volver de la muerte una y otra vez.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>SR. FRÍO (Victor Fries)</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/frio.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Anteriormente un científico experto en criogenia; se trastornó al enfermarse su amada esposa Nora, a quien preservó criogénicamente hasta que lograra descubrir una cura para su enfermedad. Un accidente en el proceso provocó que su cuerpo solo funcionara a temperaturas debajo del punto de congelación por lo que debe utilizar un traje especial de refrigeración y usa una tecnología similar para las armas y los aparatos que diseña.</p>
+		      						</div>
+		      					</div>      					
+		      				</div>
+		    			</li>			
+		    			<li>
+		      				<div class="collapsible-header teal-text text-lighten-1"><strong>VICTOR ZSASZ</strong></div>
+		      				<div class="collapsible-body">
+		      					<div class="row">
+		      						<div class="col s12 m12 l12 center-align">
+		      							<img class="responsive-img" src="img/zsasz.jpg">
+		      						</div>
+		      						<div class="col s12 m12 l12">
+		      							<p>Es un asesino en serie que lleva la cuenta de sus víctimas haciéndose una cicatriz nueva con su cuchillo por cada víctima.</p>
+		      						</div>		      								      						
+		      					</div>      					
+		      				</div>
+		    			</li>    			
+		  			</ul>
+  				</div>
+  			</div>
+			<!-- Fin collapsible villanos -->
+
+			<!-- Título películas -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable">TOP 5 LAS MEJORES PELÍCULAS ANIMADAS</h4>	
+				</div>
+			</div>
+
+			<!-- Cards películas -->
+			<div class="row row-no-botton">
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+						<!-- Imagen -->
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/batmanFantasma.jpg">
+    					</div>
+    					<!-- Contenido -->
+    					<div class="card-content">
+							<p><strong>1) Batman:<br/>La máscara del fantasma</strong></p>
+    					</div>
+    					<!-- Acción -->
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger" href="#modalFantasma" id="playFantasma">Ver trailer</a>
+			     		</div>
+			     		<!-- Revelar -->
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p>Cuando tres los más temidos líderes de la mafia de Ciudad Gótica son sistemáticamente asesinados uno por uno, se teme aun mas lo peor: que Batman es el culpable de estos crímenes.</p>
+    					</div>
+  					</div>
+				</div>
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/batmanTDKR1.jpg">
+    					</div>
+    					<div class="card-content">
+							<p><strong>2) Batman: El Regreso<br/>del Caballero Oscuro - Parte 1</strong></p>
+    					</div>
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger" href="#modalTDKR1" id="playTDKR1">Ver trailer</a>
+			     		</div>
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p>Después de que el gobierno haya prohibido la actividad de los superhéroes, Batman se vio obligado a retirarse. Diez años después, Gotham City está plagada de crimen y aterrorizada por una banda conocida como los Mutantes.</p>
+    					</div>
+  					</div>
+				</div>
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/batmanTDKR2.jpg">
+    					</div>
+    					<div class="card-content">
+							<p><strong>2) Batman: El Regreso<br/>del Caballero Oscuro - Parte 2</strong></p>
+    					</div>
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger" href="#modalTDKR2" id="playTDKR2">Ver trailer</a>
+			     		</div>
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p> Con Batman de regreso como el centro de atención, la cobertura de los medios de comunicación han despertado un mal aun peor: El Guasón!, y junto a eso se avecina el Hombre de Acero, aunque esta vez tienen a Batman en la mira.</p>
+    					</div>
+  					</div>
+				</div>				
+			</div>
+			<div class="row row-no-botton">	
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/BatmanYearOnePoster.jpg">
+    					</div>
+    					<div class="card-content">
+							<p><strong>3) Batman:<br/>Año uno</strong></p>
+    					</div>
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger"href="#modalYearOne" id="playYearOne">Ver trailer</a>
+			     		</div>
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p>La historia relata los inicios de la carrera de James Gordon con el Departamento de Policía de Gotham City con la aparición de Bruce como Batman.</p>
+    					</div>
+  					</div>
+				</div>				
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/batmanBeyondPoster.jpg">
+    					</div>
+    					<div class="card-content">
+							<p><strong>4) Batman del futuro:<br/>El Regreso del Guasón</strong></p>
+    					</div>
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger" href="#modalBeyond" id="playBeyond">Ver trailer</a>
+			     		</div>
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p>Joker no murio y ahora es mas fuerte. Terry MacGinnis el Batman del Futuro se enfrentara al enemigo de su mentor Bruce Wayne.</p>
+    					</div>
+  					</div>
+				</div>
+				<div class="col s12 m4 l4 center-align">
+					<div class="card small hoverable">
+    					<div class="card-image waves-effect waves-block waves-light">
+      						<img class="activator responsive-img" src="img/batmanRedHood.jpeg">
+    					</div>
+    					<div class="card-content">
+							<p><strong>5) Batman:</br>Bajo la capucha roja</strong></p>
+    					</div>
+    					<div class="card-action blue accent-1">
+			     			<a class="modal-trigger" href="#modalRedHood" id="playRedHood">Ver trailer</a>
+			     		</div>
+    					<div class="card-reveal">
+      						<span class="card-title"><strong>Sinopsis</strong><i class="material-icons right">close</i></span>
+      						<p>En Gotham City aparece un hombre conocido como Red Hood, mitad vigilante mitad criminal, comenzará a hacer el mismo trabajo que Batman, aunque bajo otro código moral: matar es una opción.</p>
+    					</div>
+  					</div>
+				</div>				
+			</div>			
+			<!-- Fin cards películas -->
+
+			<!-- Título dirección -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12">
+					<h4 class="card-panel grey-text text-lighten-1 black center-align hoverable" id="baticueva">BATICUEVA</h4>	
+				</div>
+			</div>
+
+			<!-- Google maps -->
+			<div class="row row-no-botton">
+				<div class="col s12 m12 l12 center-align">
+					<h6 id="mensaje-mapa"><strong>¿Qué esperas para realizar un tour virtual por la Baticueva y la mansión de Bruce Wayne?</strong></h6>
+				</div>	
+				<div class="col s12 m6 offset-m3 l6 offset-l3">
+					<div id="map-container">
+						<iframe id="map-baticueva" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.22955555347!2d-83.2856377849882!3d42.76235021759423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882493728f412dc9%3A0x621ac62e50ef15c!2sBruce+Wayne&#39;s+Residence!5e0!3m2!1ses!2smx!4v1463781488522" width="450" height="300" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>				
+			</div>
+			<!-- Fin google maps -->
+
+			<!-- Barra de búsqueda -->
+			<div class="row row-search">
+				<form class="col s10 offset-s1 m12 l12">
+					<div class="row row-search">
+	        			<div class="input-field">
+	          				<i class="ionicon ion-android-search prefix"></i>
+	          				<input id="buscadorGoogle" type="text">
+	          				<label for="buscadorGoogle">Buscar en Google</label>
+	        			</div>
+	        		</div>
+	      		</form>
+      		</div>
+      		<!-- Fin barra de búsqueda -->
+
+		</div>	
+		<!-- Fin contenedor central -->	
+
+		<!-- Pie de página -->
+		<footer class="page-footer black">
+			<div class="container">
+				<div class="row row-redes-sociales">
+					<!-- Iconos redes sociales-->
+					<div class="col s2 m1 l1">
+		                <a href="https://twitter.com/?lang=es" target="_blank"><i class="small ionicon ion-social-twitter iconos"></i></a>
+		            </div>		           
+		            <div class="col s2 m1 l1">
+		                <a href="https://www.instagram.com/" target="_blank"><i class="small ionicon ion-social-instagram iconos"></i></a>
+		            </div>
+		            <div class="col s2 m1 l1">
+		                <a href="https://www.youtube.com/" target="_blank"><i class="small ionicon ion-social-youtube iconos"></i></a>
+		            </div>
+		             <div class="col s2 m1 l1">
+		                <a href="https://es-la.facebook.com/" target="_blank"><i class="small ionicon ion-social-facebook iconos"></i></a>
+	            	</div>
+		           	<!-- Fin iconos redes sociales-->
+				</div>
+				<!-- Copyright -->
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="footer-copyright">© 2016 Lambarria Pérez Miguel Ángel, All rights reserved.</div>						
+					</div>					
+				</div>
+	        </div>
+		</footer>
+		<!-- Fin pie de página -->	
+
+	</body>
+	<!-- Fin cuerpo de la página -->
+</html>
